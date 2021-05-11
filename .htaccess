@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tacosp\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tacosp\.in$
+RewriteRule ^/?$ "http\:\/\/www\.tacosp\.in\/app" [R=301,L]
+
+# RewriteRule  (.*)  http://tacosp.in/$1  [P,L] 

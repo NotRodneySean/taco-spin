@@ -1,0 +1,26 @@
+/* Navigation */
+.navbar-brand {
+    font-size: 1rem;
+    font-weight: 500;
+}
+a.navbar-brand img {
+    position: relative;
+    top: -1px;
+    transform: rotate(345deg);
+    padding-right: 0.5rem;
+}
+
+/* Text Utility Classes */
+.text-dark {
+    color: #212529;
+}
+
+/* Offcanvas */
+@media (min-width: 768px) {
+    .offcanvas-start {
+        width: 600px;
+    }
+}
+.offcanvas-section {
+    margin: 40px auto;
+}
