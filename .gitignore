@@ -1,6 +1,6 @@
 log/
 config.js
-.jshitrc
 node_modules/
 package-lock.json
 package.json
+.jshintrc
