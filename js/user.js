@@ -44,7 +44,7 @@ const User = (function() {
     }
 
     return {
-        a: a,
+        info: a,
         init: init
     };
 
@@ -68,7 +68,6 @@ const Winners = (function() {
             winners.push(arr);
             content.append('<tr>' + '<td>' + totals[i].name + '</td>' + '<td>' + totals[i].guess + '</td>' + '<td>' + totals[i].spin_count + '</td>' + '<td>' + totals[i].date_won + '</td>' + '</tr>');
         }
-        console.log(winners);
     }
     
     return {
