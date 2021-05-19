@@ -15,11 +15,20 @@ async function getMultiple() {
   const guesses = helper.emptyOrRows(guesses_rows);
   const totals = helper.emptyOrRows(totals_rows);
 
-  const user_history = helper.init(users, guesses, totals);
+  const info = helper.init(users, guesses, totals);
 
   return {
-    user_history
+    info,
+    totals
   };
+}
+
+async function getWinnerHistory() {
+  const totals_rows = await db.query(
+    `SELECT * FROM totals WHERE 1`, null
+  );
+
+  return { totals_rows };
 }
 
 async function create(user){
@@ -80,6 +89,7 @@ async function remove(id) {
 
 module.exports = {
   getMultiple,
+  getWinnerHistory,
   create,
   update,
   remove

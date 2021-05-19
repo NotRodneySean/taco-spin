@@ -31,13 +31,27 @@ html
 
       block content
 
-      block history
-
       block footer
         #footer
           footer.footer
             .container
               span.text-muted Rodney Sean, MIT License
+      
+      #offcanvasMenu_winners.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasMenu_winnersLabel')
+        .offcanvas-header
+            h5#offcanvasMenu_winnersLabel.offcanvas-title Past Winners
+            button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+        .offcanvas-body
+            .offcanvas-section
+                h4.text-dark Previous Winners
+                table#winningHistory.table.table-striped.table-hover
+                    thead
+                        tr
+                            th(scope='col') Name
+                            th(scope='col') Guess
+                            th(scope='col') Total Spins
+                            th(scope='col') Date
+                    tbody
         
       script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js' integrity='sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf' crossorigin='anonymous')
       script(src='https://code.jquery.com/jquery-3.5.1.js')

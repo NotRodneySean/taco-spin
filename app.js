@@ -2,13 +2,13 @@ const express = require('express');
 const path = require('path');
 const port = process.env.PORT || 3000;
 
+// Build pipeline
+const app = express();
+
 // Route modules
 const tacoStatic = require('./routes/taco-static');
 const indexStatic = require('./routes/index');
 const userJson = require('./routes/users');
-
-// Build pipeline
-const app = express();
 
 app.set('title', 'Taco Spin');
 
