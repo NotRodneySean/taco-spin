@@ -3,8 +3,9 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 
 // Route modules
-const indexStatic = require('./routes/index');
 const tacoStatic = require('./routes/taco-static');
+const indexStatic = require('./routes/index');
+const userJson = require('./routes/users');
 
 // Build pipeline
 const app = express();
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Application Routes
 app.use('/', indexStatic);
+app.use('/history', userJson);
 app.use('/taco-static', tacoStatic);
 
 /* Error handler middleware */

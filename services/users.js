@@ -1,6 +1,5 @@
 const db = require('./db');
 const helper = require('../helper');
-const compile = require('../scripts/user_info');
 
 async function getMultiple() {
   const user_rows = await db.query(
@@ -16,11 +15,10 @@ async function getMultiple() {
   const guesses = helper.emptyOrRows(guesses_rows);
   const totals = helper.emptyOrRows(totals_rows);
 
-  const user_history = compile.init(users, guesses, totals);
+  const user_history = helper.init(users, guesses, totals);
 
   return {
-    user_history,
-    totals_rows
+    user_history
   };
 }
 
