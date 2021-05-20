@@ -5,6 +5,10 @@ function emptyOrRows(rows) {
     return rows;
 }
 
+function adjustDate(date_str) {
+    return new Date(date_str).toLocaleDateString();
+}
+
 let user_info = [];
 
 function getUsers(users) {
@@ -33,7 +37,7 @@ function getHistory(totals) {
         for (let j = 0; j < user_info.length; j++) {
             let o = {};
             if (user_info[j].user_id === totals[i].user_id) {
-                o.date_won = totals[i].date_won;
+                o.date_won = adjustDate(totals[i].date_won);
                 o.guess = totals[i].guess;
                 o.total = totals[i].spin_count;
                 user_info[j].history.push(o);
