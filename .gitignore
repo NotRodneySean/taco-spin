@@ -1,8 +1,8 @@
 log/
 config.js
+modules/
+img/
 node_modules/
 package-lock.json
 package.json
 .jshintrc
-data/auth.php
-cred.txt

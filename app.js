@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 // Route modules
-const tacoStatic = require('./routes/taco-static');
+const offcanvas = require('./routes/history');
 const indexStatic = require('./routes/index');
 const userJson = require('./routes/users');
 
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Application Routes
 app.use('/', indexStatic);
 app.use('/history', userJson);
-app.use('/taco-static', tacoStatic);
+app.use('/offcanvas', offcanvas);
 
 /* Error handler middleware */
 app.use((err, req, res, next) => {

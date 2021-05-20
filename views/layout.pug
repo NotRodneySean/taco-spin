@@ -25,9 +25,9 @@ html
             a.navbar-brand(href='/')
               img.d-inline-block.align-text-top(src='http://www.tacosp.in/app/img/taco-svg_no-face.svg' height='20' alt='Taco Spin')
               | Taco Spin
-            //- ul.navbar-nav.me-auto.mb-2.mb-lg-0
-              //- li.nav-item
-                //- a.nav-link(href='/history') History
+            ul.navbar-nav.ms-auto
+              li.nav-item
+                a.nav-link(href='/history' data-bs-toggle='offcanvas' data-bs-target='#offcanvasMenu_winners' aria-controls='offcanvasMenu_winners') History
 
       block content
 
@@ -47,9 +47,10 @@ html
                 table#winningHistory.table.table-striped.table-hover
                     thead
                         tr
+                            //- th(scope='col') # of wins
                             th(scope='col') Name
                             th(scope='col') Guess
-                            th(scope='col') Total Spins
+                            th(scope='col') Total spins
                             th(scope='col') Date
                     tbody
         

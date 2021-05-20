@@ -37,6 +37,7 @@ function getHistory(totals) {
                 o.guess = totals[i].guess;
                 o.total = totals[i].spin_count;
                 user_info[j].history.push(o);
+                user_info[j].total_wins = user_info[j].history.length;
             }
         }
     }
