@@ -16,11 +16,13 @@ async function getMultiple() {
   const totals = helper.emptyOrRows(totals_rows);
 
   const info = helper.init(users, guesses, totals);
+  const totals_list = helper.formatWinningDate(totals);
 
   return {
     info,
-    totals
+    totals_list
   };
+
 }
 
 async function getWinnerHistory() {

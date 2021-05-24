@@ -47,14 +47,34 @@ function getHistory(totals) {
     }
 }
 
+function formatWinningDate(array) {
+    for(let i=0; i<array.length; i++) {
+        array[i].date_won = adjustDate(array[i].date_won);
+    }
+    const sortedArray = sortArrayByDate(array);
+    return sortedArray;
+}
+
+function sortWinningHistory(array) {
+    for(let i=0; i<array.length; i++) {
+        array[i].history = sortArrayByDate(array[i].history);
+    }
+}
+
+function sortArrayByDate(array) {
+    return array.slice().sort((a, b) => new Date(b.date_won).getTime() - new Date(a.date_won).getTime());
+}
+
 function init(users, guesses, totals) {
     getUsers(users);
     getGuesses(guesses);
     getHistory(totals);
+    sortWinningHistory(user_info);
     return user_info;
 }
 
 module.exports = {
     emptyOrRows,
+    formatWinningDate,
     init
 };
