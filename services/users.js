@@ -15,11 +15,15 @@ async function getMultiple() {
   const guesses = helper.emptyOrRows(guesses_rows);
   const totals = helper.emptyOrRows(totals_rows);
 
-  const info = helper.init(users, guesses, totals);
-  const totals_list = helper.formatWinningDate(totals);
+  let totals_list = helper.formatWinningDate(totals);
+
+  const info = helper.constructUserList(users, guesses, totals);
 
   return {
     info,
+    users: users,
+    totals: totals,
+    guesses: guesses,
     totals_list
   };
 

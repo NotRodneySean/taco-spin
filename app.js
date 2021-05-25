@@ -2,11 +2,9 @@ const express = require('express');
 const path = require('path');
 const port = process.env.PORT || 3000;
 
-// Build pipeline
 const app = express();
 
 // Route modules
-const offcanvas = require('./routes/history');
 const indexStatic = require('./routes/index');
 const userJson = require('./routes/users');
 
@@ -15,17 +13,12 @@ app.set('title', 'Taco Spin');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-// Form input
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
 // Static Content
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Application Routes
 app.use('/', indexStatic);
 app.use('/history', userJson);
-app.use('/offcanvas', offcanvas);
 
 /* Error handler middleware */
 app.use((err, req, res, next) => {

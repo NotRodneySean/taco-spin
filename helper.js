@@ -65,7 +65,7 @@ function sortArrayByDate(array) {
     return array.slice().sort((a, b) => new Date(b.date_won).getTime() - new Date(a.date_won).getTime());
 }
 
-function init(users, guesses, totals) {
+function constructUserList(users, guesses, totals) {
     getUsers(users);
     getGuesses(guesses);
     getHistory(totals);
@@ -76,5 +76,5 @@ function init(users, guesses, totals) {
 module.exports = {
     emptyOrRows,
     formatWinningDate,
-    init
+    constructUserList
 };
