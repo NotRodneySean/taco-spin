@@ -5,14 +5,9 @@ const services = require('../services/users');
 router.get('/', async function(req, res, next) {
   try {
     let data = res.json(await services.getMultiple(req.query));
-    let users = res.json(await services.getMultiple(req.query.users));
-    let guesses = res.json(await services.getMultiple(req.query.guesses));
-    let totals = res.json(await services.getMultiple(req.query.totals));
-      res.render('index', {
-        data: data,
-        users: users,
-        guesses: guesses,
-        totals: totals
+
+      res.render('/', {
+        data: data
       });
   } catch(err) {
       console.error(`Error while getting users info `, err.message);

@@ -1,0 +1,426 @@
+{
+    "users": [{
+        "user_id": 1000,
+        "full_name": "Alyssa C",
+        "guess": 9523,
+        "history": [{
+            "date_won": "3/5/2021",
+            "guess": 9652,
+            "total": 8606
+        }, {
+            "date_won": "12/4/2020",
+            "guess": 6548,
+            "total": 6596
+        }, {
+            "date_won": "6/26/2020",
+            "guess": 5642,
+            "total": 5715
+        }, {
+            "date_won": "9/20/2019",
+            "guess": 5648,
+            "total": 5622
+        }, {
+            "date_won": "7/19/2019",
+            "guess": 5649,
+            "total": 5404
+        }],
+        "total_wins": 5
+    }, {
+        "user_id": 1001,
+        "full_name": "Andy W.",
+        "guess": "",
+        "history": [{
+            "date_won": "4/23/2021",
+            "guess": 4831,
+            "total": 4595
+        }, {
+            "date_won": "11/6/2020",
+            "guess": 4831,
+            "total": 4393
+        }, {
+            "date_won": "10/2/2020",
+            "guess": 4831,
+            "total": 4345
+        }, {
+            "date_won": "8/7/2020",
+            "guess": 4831,
+            "total": 3906
+        }, {
+            "date_won": "5/1/2020",
+            "guess": 4831,
+            "total": 4746
+        }, {
+            "date_won": "11/15/2019",
+            "guess": 21012,
+            "total": 19468
+        }, {
+            "date_won": "9/13/2019",
+            "guess": 12345,
+            "total": 24341
+        }, {
+            "date_won": "8/2/2019",
+            "guess": 15151,
+            "total": 24923
+        }],
+        "total_wins": 8
+    }, {
+        "user_id": 1002,
+        "full_name": "Annican J",
+        "guess": 22222,
+        "history": []
+    }, {
+        "user_id": 1003,
+        "full_name": "Aubrie F.",
+        "guess": 21021,
+        "history": [{
+            "date_won": "1/29/2021",
+            "guess": 12375,
+            "total": 16574
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1004,
+        "full_name": "Ben W",
+        "guess": 0,
+        "history": [{
+            "date_won": "5/7/2021",
+            "guess": 12345,
+            "total": 12207
+        }, {
+            "date_won": "2/26/2021",
+            "guess": 12345,
+            "total": 13912
+        }, {
+            "date_won": "1/15/2021",
+            "guess": 12345,
+            "total": 24374
+        }, {
+            "date_won": "11/20/2020",
+            "guess": 6145,
+            "total": 7027
+        }, {
+            "date_won": "1/3/2020",
+            "guess": 4609,
+            "total": 4950
+        }],
+        "total_wins": 5
+    }, {
+        "user_id": 1005,
+        "full_name": "Ben P",
+        "guess": 0,
+        "history": [{
+            "date_won": "12/20/2019",
+            "guess": 4444,
+            "total": 5427
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1006,
+        "full_name": "Brett L",
+        "guess": 56149,
+        "history": [{
+            "date_won": "12/18/2020",
+            "guess": 22161,
+            "total": 23963
+        }, {
+            "date_won": "4/3/2020",
+            "guess": 6543,
+            "total": 6415
+        }, {
+            "date_won": "11/1/2019",
+            "guess": 12000,
+            "total": 20475
+        }],
+        "total_wins": 3
+    }, {
+        "user_id": 1007,
+        "full_name": "Brian S",
+        "guess": 4831,
+        "history": [{
+            "date_won": "3/6/2020",
+            "guess": 12345,
+            "total": 21408
+        }, {
+            "date_won": "9/6/2019",
+            "guess": 5678,
+            "total": 5754
+        }, {
+            "date_won": "8/23/2019",
+            "guess": 5463,
+            "total": 5683
+        }],
+        "total_wins": 3
+    }, {
+        "user_id": 1008,
+        "full_name": "Dalan L",
+        "guess": "",
+        "history": []
+    }, {
+        "user_id": 1009,
+        "full_name": "David S",
+        "guess": "",
+        "history": [{
+            "date_won": "3/27/2020",
+            "guess": 13500,
+            "total": 24349
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1010,
+        "full_name": "Eric T",
+        "guess": 13520,
+        "history": [{
+            "date_won": "1/24/2020",
+            "guess": 4444,
+            "total": 4584
+        }, {
+            "date_won": "7/26/2019",
+            "guess": 1444,
+            "total": 1430
+        }],
+        "total_wins": 2
+    }, {
+        "user_id": 1011,
+        "full_name": "Ethan S",
+        "guess": "",
+        "history": [{
+            "date_won": "8/21/2020",
+            "guess": 2113,
+            "total": 2429
+        }, {
+            "date_won": "1/17/2020",
+            "guess": 2113,
+            "total": 853
+        }],
+        "total_wins": 2
+    }, {
+        "user_id": 1012,
+        "full_name": "Hailey R",
+        "guess": 10007,
+        "history": [{
+            "date_won": "5/8/2020",
+            "guess": 2222,
+            "total": 2360
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1013,
+        "full_name": "Jesse N",
+        "guess": "",
+        "history": []
+    }, {
+        "user_id": 1014,
+        "full_name": "Jordan T",
+        "guess": 11311,
+        "history": [{
+            "date_won": "3/19/2021",
+            "guess": 11311,
+            "total": 12579
+        }, {
+            "date_won": "12/6/2019",
+            "guess": 7411,
+            "total": 7778
+        }],
+        "total_wins": 2
+    }, {
+        "user_id": 1015,
+        "full_name": "Kaleb S",
+        "guess": "",
+        "history": [{
+            "date_won": "4/17/2020",
+            "guess": 16000,
+            "total": 18549
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1016,
+        "full_name": "Kyle D",
+        "guess": "",
+        "history": [{
+            "date_won": "5/15/2020",
+            "guess": 10001,
+            "total": 10763
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1017,
+        "full_name": "Kyle Johnson",
+        "guess": "",
+        "history": []
+    }, {
+        "user_id": 1018,
+        "full_name": "Marissa L",
+        "guess": 6666,
+        "history": [{
+            "date_won": "4/16/2021",
+            "guess": 23000,
+            "total": 23872
+        }, {
+            "date_won": "10/30/2020",
+            "guess": 6666,
+            "total": 6693
+        }, {
+            "date_won": "10/23/2020",
+            "guess": 11111,
+            "total": 14485
+        }, {
+            "date_won": "6/5/2020",
+            "guess": 12121,
+            "total": 18110
+        }, {
+            "date_won": "4/10/2020",
+            "guess": 6543,
+            "total": 6489
+        }, {
+            "date_won": "10/18/2019",
+            "guess": 6123,
+            "total": 6268
+        }, {
+            "date_won": "9/27/2019",
+            "guess": 6500,
+            "total": 6509
+        }],
+        "total_wins": 7
+    }, {
+        "user_id": 1019,
+        "full_name": "Michael E",
+        "guess": "",
+        "history": [{
+            "date_won": "2/21/2020",
+            "guess": 6969,
+            "total": 7451
+        }, {
+            "date_won": "11/8/2019",
+            "guess": 8500,
+            "total": 8624
+        }],
+        "total_wins": 2
+    }, {
+        "user_id": 1020,
+        "full_name": "Milo L",
+        "guess": "",
+        "history": []
+    }, {
+        "user_id": 1021,
+        "full_name": "Nathan J",
+        "guess": "",
+        "history": []
+    }, {
+        "user_id": 1022,
+        "full_name": "Nick G",
+        "guess": "",
+        "history": []
+    }, {
+        "user_id": 1023,
+        "full_name": "Rodney M",
+        "guess": 2000,
+        "history": [{
+            "date_won": "6/19/2020",
+            "guess": 2000,
+            "total": 2004
+        }, {
+            "date_won": "11/22/2019",
+            "guess": 4443,
+            "total": 4421
+        }, {
+            "date_won": "8/30/2019",
+            "guess": 7777,
+            "total": 7368
+        }],
+        "total_wins": 3
+    }, {
+        "user_id": 1024,
+        "full_name": "Riley M",
+        "guess": 16734,
+        "history": [{
+            "date_won": "5/28/2021",
+            "guess": 16000,
+            "total": 16117
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1025,
+        "full_name": "Ryan C",
+        "guess": 4444,
+        "history": []
+    }, {
+        "user_id": 1026,
+        "full_name": "Scott J",
+        "guess": "",
+        "history": []
+    }, {
+        "user_id": 1027,
+        "full_name": "Sean R",
+        "guess": 8675,
+        "history": [{
+            "date_won": "3/12/2021",
+            "guess": 7530,
+            "total": 7541
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1028,
+        "full_name": "Spencer R",
+        "guess": "",
+        "history": []
+    }, {
+        "user_id": 1029,
+        "full_name": "Stephen W",
+        "guess": 5000,
+        "history": [{
+            "date_won": "5/21/2021",
+            "guess": 6500,
+            "total": 6071
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1030,
+        "full_name": "Ty C",
+        "guess": "",
+        "history": [{
+            "date_won": "10/16/2020",
+            "guess": 7359,
+            "total": 7203
+        }, {
+            "date_won": "9/25/2020",
+            "guess": 2136,
+            "total": 2790
+        }],
+        "total_wins": 2
+    }, {
+        "user_id": 1031,
+        "full_name": "Tyler R",
+        "guess": 19191,
+        "history": [{
+            "date_won": "4/9/2021",
+            "guess": 19191,
+            "total": 19116
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1032,
+        "full_name": "Xander",
+        "guess": 9823,
+        "history": [{
+            "date_won": "2/5/2021",
+            "guess": 5409,
+            "total": 5799
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1033,
+        "full_name": "Zachary W",
+        "guess": "",
+        "history": [{
+            "date_won": "2/7/2020",
+            "guess": 16589,
+            "total": 16376
+        }],
+        "total_wins": 1
+    }, {
+        "user_id": 1034,
+        "full_name": "Brett W",
+        "guess": 5401,
+        "history": []
+    }]
+}
