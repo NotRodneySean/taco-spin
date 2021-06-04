@@ -11,10 +11,9 @@ function displayPastWinners(totals) {
 }
 
 $.ajax({
-    url: '/history',
+    url: '/users',
     complete: function (data) {
         User = JSON.parse(data.responseText);
         displayPastWinners(User.totals);
     }
 });
-

@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Application Routes
 app.use('/', indexStatic);
-app.use('/history', userJson);
+app.use('/users', userJson);
 
 /* Error handler middleware */
 app.use((err, req, res, next) => {

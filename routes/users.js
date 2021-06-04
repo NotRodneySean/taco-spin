@@ -4,11 +4,7 @@ const services = require('../services/users');
 
 router.get('/', async function(req, res, next) {
   try {
-    let data = res.json(await services.getMultiple(req.query));
-
-      res.render('/', {
-        data: data
-      });
+    return res.json(await services.getMultiple(req.query));
   } catch(err) {
       console.error(`Error while getting users info `, err.message);
       next(err);
