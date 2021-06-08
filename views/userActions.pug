@@ -1,0 +1,17 @@
+extends layout
+
+block userActions
+  main.d-flex.flex-column.justify-content-center.text-start(style='height: 80vh;')
+    .container
+      .row
+        .col
+        .col-md
+          h2 User Actions
+
+          p(class='lead') Add User
+          
+          form(id='addUser' method='post' action='/')
+              input(type='text' value='')
+              input(type='submit' value='Submit')
+            
+        .col

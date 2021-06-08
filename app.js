@@ -7,6 +7,7 @@ const app = express();
 // Route modules
 const indexStatic = require('./routes/index');
 const userJson = require('./routes/users');
+const userActions = require('./routes/userActions');
 
 app.set('title', 'Taco Spin');
 
@@ -16,9 +17,17 @@ app.set('view engine', 'pug');
 // Static Content
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Form
+app.use(express.json());
+
+app.post('/', function(req, res){
+  console.log(req.body.name);
+});
+
 // Application Routes
 app.use('/', indexStatic);
 app.use('/users', userJson);
+app.use('/addUser', userActions);
 
 /* Error handler middleware */
 app.use((err, req, res, next) => {

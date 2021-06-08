@@ -25,11 +25,19 @@ html
             a.navbar-brand(href='/')
               img.d-inline-block.align-text-top(src='/img/taco-svg_no-face.svg' height='20' alt='Taco Spin')
               | Taco Spin
-            ul.navbar-nav.ms-auto
-              li.nav-item
-                a.nav-link(href='/history' data-bs-toggle='offcanvas' data-bs-target='#offcanvasMenu_winners' aria-controls='offcanvasMenu_winners') History
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            div.collapse.navbar-collapse(id='navbarSupportedContent')
+              ul.navbar-nav.ms-auto
+                li.nav-item
+                  a.nav-link(href='/') Home
+                li.nav-item
+                  a.nav-link(href='/history' data-bs-toggle='offcanvas' data-bs-target='#offcanvasMenu_winners' aria-controls='offcanvasMenu_winners') History
+                li.nav-item
+                  a.nav-link(href='/addUser') Add User
 
       block content
+      block userActions
 
       block footer
         #footer

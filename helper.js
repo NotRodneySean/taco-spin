@@ -73,8 +73,17 @@ function constructUserList(users, guesses, totals) {
     return user_info;
 }
 
+function getHighestUserId(users) {
+    let ids = [];
+    for (let i = 0; i < users.length; i++) {
+        ids.push(users[i].user_id);
+    }
+    return Math.max(...ids) + 1;
+}
+
 module.exports = {
     emptyOrRows,
     formatWinningDate,
+    getHighestUserId,
     constructUserList
 };

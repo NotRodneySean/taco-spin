@@ -29,20 +29,13 @@ async function getMultiple() {
 
 }
 
-async function getWinnerHistory() {
-  const totals_rows = await db.query(
-    `SELECT * FROM totals WHERE 1`, null
-  );
-
-  return { totals_rows };
-}
-
-async function create(user){
+async function create(user) {
+  const next_id = helper.getHighestUserId((await getMultiple()).users);
   const result = await db.query(
     `INSERT INTO users 
     (user_id, full_name) 
     VALUES 
-    (?, ?)`, 
+    (` + next_id + `, ?)`,
     [ user.user_id, user.full_name ]
   );
 
@@ -95,7 +88,6 @@ async function remove(id) {
 
 module.exports = {
   getMultiple,
-  getWinnerHistory,
   create,
   update,
   remove

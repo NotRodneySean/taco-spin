@@ -17,3 +17,23 @@ $.ajax({
         displayPastWinners(User.totals);
     }
 });
+
+// Form
+$('input[type=submit]').click(function(e) {
+    e.preventDefault();
+    let data = {};
+
+    data.full_name = $('input[type=text]').val();
+    data.user_id = 9999;
+
+    $.ajax({
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        url: '/users',
+        success: function(data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+
+});
